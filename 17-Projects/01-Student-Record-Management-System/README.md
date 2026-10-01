@@ -136,7 +136,7 @@ This project applies a wide range of fundamental C++ concepts:
 
 Technology| Details
 Programming Language| C++
-Development Environment| Dev-C++
+Development Environment| Dev-C++ & VS Code
 Course| CS201 – Introduction to Programming
 Application Type| Console-based
 Data Storage| In-memory arrays
