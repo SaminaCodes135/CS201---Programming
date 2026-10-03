@@ -848,6 +848,7 @@ void viewStudentDetails(
     }
 
     cout << "\n========== STUDENT DETAILS ==========\n";
+    cout<<endl;
 
     displayStudentSummary(
         rollNumbers[index],
@@ -1052,7 +1053,7 @@ void addStudent(
     }
 
     cout << "\n========== ADD STUDENT ==========\n";
-
+cout<<endl;
     rollNumbers[studentCount] =
         inputRollNumber(
             rollNumbers,
@@ -1143,8 +1144,8 @@ void updateName(char name[])
         name,
         newName
     );
-
-    cout << "Name updated successfully.\n";
+   
+    cout << "\nName updated successfully.\n";
 }
 
 void updateRollNumber(
@@ -1196,8 +1197,8 @@ void updateRollNumber(
 
         rollNumbers[index] =
             newRoll;
-
-        cout << "Roll number updated successfully.\n";
+            
+        cout << "\nRoll number updated successfully.\n";
 
         break;
     }
@@ -1362,7 +1363,7 @@ void updateMarks(
         break;
     }
 
-    cout << "Marks updated successfully.\n";
+    cout << "\nMarks updated successfully.\n";
 }
 
 void updateStudent(
@@ -1408,7 +1409,7 @@ void updateStudent(
         return;
     }
 
-    cout << "\nStudent Found:\n";
+    cout << "\nStudent Found!\n";
 
     displayStudentSummary(
         rollNumbers[index],
@@ -1426,6 +1427,7 @@ void updateStudent(
     do
     {
         cout << "\n========== UPDATE STUDENT ==========\n";
+        cout<<endl;
 
         cout << "1. Update Name\n";
         cout << "2. Update Roll Number\n";
@@ -1564,6 +1566,7 @@ void deleteStudent(
     }
 
     int roll;
+    cout<< " \n========= Delete Student =========\n ";
 
     cout << "\nEnter Roll Number of student to delete: ";
     cin >> roll;
@@ -1744,7 +1747,7 @@ void sortByRollNumber(
         }
     }
 
-    cout << "Students sorted by Roll Number.\n";
+    cout << "\nStudents sorted by Roll Number successfully.\n";
 }
 
 void sortByName(
@@ -1787,7 +1790,7 @@ void sortByName(
         }
     }
 
-    cout << "Students sorted by Name.\n";
+    cout << "\nStudents sorted by Name successfully.\n";
 }
 
 void sortByTotalMarks(
@@ -1828,7 +1831,7 @@ void sortByTotalMarks(
         }
     }
 
-    cout << "Students sorted by Total Marks.\n";
+    cout << "\nStudents sorted by Total Marks successfully.\n";
 }
 
 void sortStudents(
@@ -1847,7 +1850,8 @@ void sortStudents(
 
     char choice;
 
-    cout << "\n========== SORT STUDENTS ==========\n";
+    cout << " \n========== SORT STUDENTS ==========\n ";
+    cout<<endl;
 
     cout << "1. Sort by Roll Number\n";
     cout << "2. Sort by Name\n";
@@ -1900,6 +1904,7 @@ void sortStudents(
             break;
 
         case '4':
+        cout<< "Returning to main menu...." <<endl;
 
             return;
 
@@ -1928,6 +1933,7 @@ void searchStudent(
     char choice;
 
     cout << "\n========== SEARCH STUDENT ==========\n";
+    cout<<endl;
 
     cout << "1. Search by Roll Number\n";
     cout << "2. Search by Name\n";
@@ -1959,7 +1965,7 @@ void searchStudent(
             }
             else
             {
-                cout << "\nStudent Found:\n";
+                cout << "\nStudent Found!\n";
 
                 displayStudentSummary(
                     rollNumbers[index],
@@ -1994,7 +2000,7 @@ void searchStudent(
                 cout << "Name cannot be empty.\n";
                 break;
             }
-
+cout<< " \nStudent Found!"<<endl;
             searchByName(
                 names,
                 rollNumbers,
@@ -2007,6 +2013,7 @@ void searchStudent(
         }
 
         case '3':
+        cout<< "Returning to main menu...." <<endl;
 
             return;
 
@@ -2024,7 +2031,7 @@ void showMainMenu()
 {
     cout << "\n";
     cout << "====================================================\n";
-    cout << "       STUDENT ACADEMIC MANAGEMENT SYSTEM           \n";
+    cout << "       STUDENT RECORD  MANAGEMENT SYSTEM           \n";
     cout << "====================================================\n";
 
     cout << "1. Add Student\n";
@@ -2185,7 +2192,7 @@ int main()
             case '9':
 
                 cout << "\nThank you for using the "
-                     << "Student Academic Management System.\n";
+                     << "Student Record Management System.\n";
 
                 cout << "Goodbye!\n";
 
