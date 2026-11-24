@@ -34,7 +34,9 @@ Implementation Constraint: Digit extraction is performed exclusively using divis
 📊 Workload Classification
 
 Each service desk is classified according to its number of support tickets:
-Number of TicketsWorkload Status0–3LIGHT4–6MODERATE7–9HEAVY 
+Number of Tickets 0-3 => Workload Status => LIGHT
+Number of Tickets 4–6 => Workload => MODERATE
+Number of Tickets 7–9 => Workload => HEAVY 
 
 ⚙️ Program Features
 
